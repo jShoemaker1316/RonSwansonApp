@@ -21,9 +21,9 @@ class ViewController: UIViewController {
                 else {
                     if let content = data {
                         do {
-                            let q = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
-                            let quote = (q[0] as! String)
-                            self.getQoute.text = quote
+                            let quote = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
+                            let swansonQuote = (quote[0] as! String)
+                            self.getQoute.text = swansonQuote
                         }
                         catch {
                             print("ERROR.")
