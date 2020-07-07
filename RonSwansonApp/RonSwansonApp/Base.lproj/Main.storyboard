@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RonSwansonApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="il_570xN.2041960019_l9gk" translatesAutoresizingMaskIntoConstraints="NO" id="eJp-Xr-k1i">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vr-he-T8G">
+                                <rect key="frame" x="20" y="89" width="374" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="XSG-Ec-Fkj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="What Do You Want?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="QuoteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xrp-Mt-MjA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" minimumScaleFactor="1" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j8i-R7-KRm">
+                                <rect key="frame" x="20" y="713" width="374" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="3g9-Io-Ehv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7vr-he-T8G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="IfC-NJ-Ngb"/>
+                            <constraint firstItem="j8i-R7-KRm" firstAttribute="leading" secondItem="7vr-he-T8G" secondAttribute="leading" id="JRe-6t-0mI"/>
+                            <constraint firstItem="j8i-R7-KRm" firstAttribute="bottom" secondItem="eJp-Xr-k1i" secondAttribute="bottom" id="KWe-me-8XH"/>
+                            <constraint firstItem="eJp-Xr-k1i" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MYb-F6-Nvy"/>
+                            <constraint firstItem="eJp-Xr-k1i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Npy-zt-4cV"/>
+                            <constraint firstItem="j8i-R7-KRm" firstAttribute="trailing" secondItem="7vr-he-T8G" secondAttribute="trailing" id="YPH-4n-FGG"/>
+                            <constraint firstItem="7vr-he-T8G" firstAttribute="centerX" secondItem="eJp-Xr-k1i" secondAttribute="centerX" id="ioG-Sa-c68"/>
+                            <constraint firstItem="7vr-he-T8G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="okp-Mg-Yt0"/>
+                            <constraint firstItem="eJp-Xr-k1i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qiG-0O-EQm"/>
+                            <constraint firstItem="eJp-Xr-k1i" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yfx-YT-uNR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="getQoute" destination="j8i-R7-KRm" id="uik-Pd-yA8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="106.47321428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="il_570xN.2041960019_l9gk" width="570" height="628"/>
+    </resources>
+</document>
